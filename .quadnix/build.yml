@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - RUN echo N | npm install --silent
+      - npm install --silent
   build:
     commands:
       - npm run build:prod
