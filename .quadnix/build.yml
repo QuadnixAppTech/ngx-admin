@@ -1,0 +1,16 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - NG_CLI_ANALYTICS=false npm install --silent
+  build:
+    commands:
+      - npm run build:prod
+
+dist: dist
+
+run:
+  angular:
+    httpd:
+      enabled: true
